@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    environment:
+      - FLASK_DEBUG=False
+    ports:
+      - 5000:5000
+    tty: True
+    stdin_open: True
